@@ -1,0 +1,166 @@
+# Framework Compatibility Table
+
+> To integrate into the WWA benchmarks page at workswithagents.dev/benchmarks
+
+## Component reference
+
+```html
+<section id="framework-compatibility">
+  <h2>Framework Compatibility</h2>
+  <p class="subtitle">
+    WWA adapters bridge popular agent frameworks to the WWA interoperability network.
+    <br>
+    <strong>Add WWA to your project:</strong>
+    <code>npx @workswithagents/wwa-cli init</code>
+  </p>
+
+  <table class="compatibility-table">
+    <thead>
+      <tr>
+        <th>Framework</th>
+        <th>WWA Adapter</th>
+        <th>Handoff</th>
+        <th>Discovery</th>
+        <th>Identity</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <a href="https://github.com/langchain-ai/langgraph" target="_blank" rel="noopener">
+            LangGraph
+          </a>
+          <span class="stars">31k★</span>
+        </td>
+        <td>
+          <code>wwa[langgraph]</code>
+          <br>
+          <small>Python + TypeScript</small>
+        </td>
+        <td class="check">
+          <a href="/specs/handoff" title="Handoff Protocol v1.1.0">✓</a>
+        </td>
+        <td class="check">
+          <a href="/specs/iacp" title="IACP v1.1.0">✓</a>
+        </td>
+        <td class="warn">⬜</td>
+        <td>
+          <span class="badge badge-beta">Beta</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/openai/openai-agents-python" target="_blank" rel="noopener">
+            OpenAI Agents SDK
+          </a>
+        </td>
+        <td>
+          <code>wwa[openai]</code>
+          <br>
+          <small>Python + TypeScript</small>
+        </td>
+        <td class="check">
+          <a href="/specs/handoff" title="Handoff Protocol v1.1.0">✓</a>
+        </td>
+        <td class="check">
+          <a href="/specs/iacp" title="IACP v1.1.0">✓</a>
+        </td>
+        <td class="warn">⬜</td>
+        <td>
+          <span class="badge badge-beta">Beta</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/microsoft/autogen" target="_blank" rel="noopener">
+            AutoGen
+          </a>
+          <span class="stars">40k★</span>
+        </td>
+        <td>
+          <code>wwa[autogen]</code>
+          <br>
+          <small>Python only</small>
+        </td>
+        <td class="check">
+          <a href="/specs/handoff" title="Handoff Protocol v1.1.0">✓</a>
+        </td>
+        <td class="check">
+          <a href="/specs/iacp" title="IACP v1.1.0">✓</a>
+        </td>
+        <td class="warn">⬜</td>
+        <td>
+          <span class="badge badge-beta">Beta</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://github.com/crewAIInc/crewAI" target="_blank" rel="noopener">
+            CrewAI
+          </a>
+          <span class="stars">31k★</span>
+        </td>
+        <td>
+          <code>wwa[crewai]</code>
+          <br>
+          <small>Python only</small>
+        </td>
+        <td class="check">
+          <a href="/specs/handoff" title="Handoff Protocol v1.1.0">✓</a>
+        </td>
+        <td class="check">
+          <a href="/specs/iacp" title="IACP v1.1.0">✓</a>
+        </td>
+        <td class="warn">⬜</td>
+        <td>
+          <span class="badge badge-beta">Beta</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Hermes Agent</strong>
+        </td>
+        <td>
+          <code>Native</code>
+        </td>
+        <td class="check">
+          <a href="/specs/handoff" title="Handoff Protocol v1.1.0">✓</a>
+        </td>
+        <td class="check">
+          <a href="/specs/iacp" title="IACP v1.1.0">✓</a>
+        </td>
+        <td class="check">
+          <a href="/specs/identity" title="Identity Protocol v1.1.0">✓</a>
+        </td>
+        <td>
+          <span class="badge badge-stable">Stable</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Microsoft Agent Framework
+        </td>
+        <td>
+          <code>Coming soon</code>
+        </td>
+        <td class="warn">⬜</td>
+        <td class="warn">⬜</td>
+        <td class="warn">⬜</td>
+        <td>
+          <span class="badge badge-planned">Planned</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="cta-banner">
+    <h3>Make your agents interoperable</h3>
+    <p>One command adds WWA protocol support to any supported framework.</p>
+    <code>npx @workswithagents/wwa-cli init</code>
+    <p class="note">
+      <a href="/docs/cli">Full documentation →</a>
+    </p>
+  </div>
+</section>
+```
